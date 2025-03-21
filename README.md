@@ -1,3 +1,10 @@
+- นำไฟล์ .env และ librechat.yaml เข้ามาใส่ก่อน
+- run ```docker compose up --build```
+- หากทำพัง อาจต้องใช้ combo 
+  - ลบ container+image+volumn ของ docker ```docker-compose down --rmi all -v``` + ลบ project clone ใหม่
+  - หากข้างบนยังแก้ไม่ได้ ให้ librechat.yaml ยังคงอยู่ แต่เอา .env ออก แล้วใช้ .env เปล่าที่เขาให้มาเป็น example เอาขึ้น docker ก่อนแล้วค่อย copy key ลงไปวาง
+  - ถ้ายังแก้ไม่ได้ ให้เพิ่ม ลบ .venv สร้างใหม่
+
 <p align="center">
   <a href="https://librechat.ai">
     <img src="client/public/assets/logo.svg" height="256">
